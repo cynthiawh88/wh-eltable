@@ -1,6 +1,6 @@
 {
   "name": "wh-eltable",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": false,
   "description": "基于element-ui中el-table封装的组件",
   "main": "lib/wh-eltable.umd.min.js",
