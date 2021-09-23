@@ -36,8 +36,18 @@
 </template>
 
 <script>
+import Vue from 'vue'
+import { Table, TableColumn, Pagination, Loading } from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css'
+
+Vue.use(Loading.directive)
 export default {
-    name: "dataTable",
+    name: "WhTable",
+    components: {
+        ElTable: Table,
+        ElTableColumn: TableColumn,
+        ElPagination: Pagination
+    },
     props: {
         tableData: Array,
         columns: Array,

@@ -1,31 +1,31 @@
 {
   "name": "wh-eltable",
   "version": "1.0.0",
-  "description": "封装el-table",
-  "main": "index.js",
+  "private": false,
+  "description": "基于element-ui中el-table封装的组件",
+  "main": "lib/wh-eltable.umd.min.js",
+  "keywords": "wh-eltable",
+  "license": "MIT",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lib": "vue-cli-service build --target lib --name wh-eltable --dest lib packages/index.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/cynthiawh88/wh-eltable.git"
-  },
-  "keywords": [
-    "table",
-    "el-table"
-  ],
-  "author": "wanghao",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/cynthiawh88/wh-eltable/issues"
-  },
-  "homepage": "https://github.com/cynthiawh88/wh-eltable#readme",
   "dependencies": {
-    "element-ui": "^2.13.2",
+    "core-js": "^3.6.5",
+    "element-ui": "^2.15.6",
     "vue": "^2.6.11"
   },
   "devDependencies": {
-    "node-sass": "^4.14.1",
-    "sass-loader": "^8.0.2"
-  }
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^8.0.2",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
 }
